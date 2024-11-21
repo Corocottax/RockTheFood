@@ -8,11 +8,11 @@ const register = async (req, res, next) => {
   try {
     const { email, name, password } = req.body;
 
-    /*  const userDuplicated = await User.findOne({ email });
+     const userDuplicated = await User.findOne({ email });
 
     if (userDuplicated) {
       return res.status(400).json("Usuario existente");
-    } */
+    }
 
     if (!verifyEmail(email)) {
       return res.status(400).json("Introduce un formato de email válido");
