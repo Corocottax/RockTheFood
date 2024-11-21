@@ -16,7 +16,7 @@ const sendEmail = (email, name, id, token) => {
     to: email,
     subject: "Verifica tu cuenta",
     text: `Hola ${name}, por favor verifica tu cuenta en Rock The Food haciendo clic en el siguiente enlace.`,
-    html: `<h1>Verifica tu cuenta</h1><p>Hola ${name}, por favor verifica tu cuenta haciendo clic en el siguiente enlace:</p><a href="http://localhost:5173/verifyaccount/${id}/${token}">Verificar cuenta</a>`,
+    html: `<h1>Verifica tu cuenta</h1><p>Hola ${name}, por favor verifica tu cuenta haciendo clic en el siguiente enlace:</p><a href="https://rock-the-food-8z1x.vercel.app/verifyaccount/${id}/${token}">Verificar cuenta</a>`,
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
