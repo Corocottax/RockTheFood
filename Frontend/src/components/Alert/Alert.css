@@ -1,0 +1,51 @@
+div.alert {
+    padding: var(--rtf-spacing-s) 35px 0px 35px;
+    border-radius: 10px;
+    opacity: 0;
+    animation: alertAnimation 0.5s forwards;
+    font-weight: 500;
+    border-radius: var(--rtf-br-primary);
+    border: 1px solid red;
+    color: #ff0000;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    position: relative;
+}
+
+div.alert > div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+div.alert img {
+    width: 20px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+div.alert h3 {
+    font-size: 16px;
+}
+
+div.alert p {
+    color: #ff0000;
+    font-size: 14px;
+    text-align: start;
+    padding: var(--rtf-spacing-s) 0px;
+    max-width: auto;
+    min-width: auto;
+}
+
+@keyframes alertAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+

@@ -1,0 +1,30 @@
+.auth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100svh;
+    gap: var(--rtf-spacing-xl);
+}
+
+.auth > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--rtf-spacing-m);
+}
+
+.auth h1 {
+    font-size: 25px;
+    font-weight: 800;
+    color: var(--rtf-color-400);
+}
+
+.auth p {
+    color: var(--rtf-color-400);
+    text-align: center;
+    max-width: 500px;
+    min-width: 300px;
+    padding: var(--rtf-spacing-m);
+}

@@ -1,0 +1,23 @@
+.toggle {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    padding: 5px;
+    height: 45px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.toggle button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.504);
+    font-size: 15px;
+}
+
+.toggle button.active {
+    background-color: var(--rtf-color-000);
+    color: var(--rtf-color-500);
+}

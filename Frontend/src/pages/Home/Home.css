@@ -1,0 +1,148 @@
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100svh;
+    padding: var(--rtf-spacing-xxl);
+    gap: var(--rtf-spacing-xxl);
+}
+
+.link-admin {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+section.recipes {
+    border: 1px solid var(--rtf-border-color);
+    width: 90%;
+    padding: var(--rtf-spacing-xxl);
+    border-radius: var(--rtf-br-primary);
+    background-color: var(--rtf-color-000);
+    display: flex;
+    flex-direction: column;
+    gap: var(--rtf-spacing-xxl);
+}
+
+section.recipes > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--rtf-spacing-xxl);
+    justify-content: center;
+}
+
+
+section.recipes>h2 {
+    color: var(--rtf-color-300);
+    font-size: 30px;
+}
+
+.home>.filters {
+    width: 90%;
+    margin-top: var(--rtf-spacing-xxl);
+}
+
+.home form {
+    width: 100%;
+    max-width: 100%;
+    align-items: start;
+}
+
+.home form label {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.home form>.properties {
+    display: flex;
+    flex-direction: row;
+    gap: var(--rtf-spacing-xxl);
+    align-items: end;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.home form>.properties button {
+    margin: 0;
+}
+
+
+.home form select {
+    border-radius: var(--rtf-br-primary);
+    padding: var(--rtf-spacing-s);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid var(--rtf-border-color);
+}
+
+.home form > div > div {
+    display: flex;
+    flex-direction: column;
+    gap: var(--rtf-spacing-s);
+}
+
+.home form .time>div {
+    display: flex;
+    align-items: center;
+}
+
+.home form .time>div>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home form .time>div>input {
+    border-radius: 0px;
+    padding: var(--rtf-spacing-s);
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid var(--rtf-border-color);
+    background-color: transparent;
+    width: 60px;
+    text-align: center;
+}
+
+.home form .time>div>button {
+    margin: 0;
+    width: 40px;
+    height: 42px;
+    padding: 0;
+    border-radius: var(--rtf-br-primary) 0px 0px var(--rtf-br-primary);
+    background-color: var(--rtf-color-000);
+    border: 1px solid var(--rtf-border-color);
+    color: var(--rtf-color-500);
+    transition: all 0.5s;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.home form .time>div>button:last-child {
+    border-radius: 0px var(--rtf-br-primary) var(--rtf-br-primary) 0px;
+    padding-bottom: 0px;
+}
+
+
+.home form .time>div>button:hover {
+    background-color: var(--rtf-color-100);
+}
+
+.home form button {
+    margin: var(--rtf-spacing-s) 0px;
+}
+
+.checkbox {
+    height: 40px;
+    cursor: pointer;
+}
+
+.checkbox:checked {
+    accent-color: var(--rtf-color-200);
+}
+

@@ -1,0 +1,168 @@
+.select_fieldform {
+    display: flex;
+    flex-direction: column;
+    gap: var(--rtf-spacing-m);
+    min-width: 165.89px;
+}
+
+.select_fieldform>select {
+    border-radius: var(--rtf-br-primary);
+    border: 1px solid var(--rtf-border-color);
+    font-size: 16px;
+    padding: var(--rtf-spacing-s);
+}
+
+.info_recipe_time_difficulty {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: var(--rtf-spacing-s);
+}
+
+.info_recipe_time_difficulty>.fieldform {
+    width: auto;
+    margin-top: 0px;
+}
+
+@media (max-width: 554px) {
+    .info_recipe_time_difficulty>.fieldform {
+        width: 100%;
+    }
+
+    .select_fieldform {
+        width: 100%;
+    }
+}
+
+.ingredient_select {
+    width: 100%;
+    margin-top: var(--rtf-spacing-m);
+}
+
+.ingredient_select>div {
+    display: flex;
+    gap: var(--rtf-spacing-m);
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    margin-top: var(--rtf-spacing-s);
+}
+
+.ingredient_select>div>div>input {
+    display: none;
+}
+
+.ingredient_select>div>div>label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: var(--rtf-spacing-s);
+    cursor: pointer;
+}
+
+.ingredient_select>div>div {
+    cursor: pointer;
+    border-radius: var(--rtf-br-primary);
+    padding: var(--rtf-spacing-s);
+    max-width: 87px;
+    position: relative;
+}
+
+.ingredient_select > div > div > label > img:hover {
+    filter: drop-shadow(0px 0px 2px #000000);
+}
+
+.ingredient_select > div > div > input:checked + label > img {
+    filter: drop-shadow(0px 0px 2px #000000);
+}
+
+.ingredient_select > div > div > input:checked + label > p {
+    font-weight: 800;
+    color: var(--rtf-color-200);
+}
+
+.ingredient_select > div > div > input:checked ~ input {
+    display: block;
+}
+
+.ingredients_selected {
+    display: flex;
+    flex-direction: column;
+    gap: var(--rtf-spacing-s);
+    margin-top: var(--rtf-spacing-m);
+    width: 100%;
+}
+
+
+.ingredients_selected > div {
+    border-radius: var(--rtf-br-primary);
+    padding: var(--rtf-spacing-m);
+    width: 100%;
+}
+
+.ingredients_selected > div > div {
+    border-bottom: 1px solid var(--rtf-border-color);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: var(--rtf-spacing-m);
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--rtf-spacing-m);
+}
+
+.ingredients_selected > div > div > input {
+    border: 1px solid var(--rtf-border-color);
+    border-radius: var(--rtf-br-primary);
+    width: 45%;
+    padding: var(--rtf-spacing-m);
+    text-align: center;
+    min-width: 100px;
+}
+
+.ingredients_selected > div > div:last-child {
+    border: none;
+}
+
+.ingredients_selected > div > div > div {
+    display: flex;
+    width: 45%;
+    min-width: 200px;
+    align-items: center;
+    gap: var(--rtf-spacing-l);
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: var(--rtf-spacing-s);
+    width: 100%;
+}
+
+.steps > div {
+    display: flex;
+    align-items: center;
+    gap: var(--rtf-spacing-s);
+    width: 100%;
+}
+
+.steps input {
+    width: 15%;
+}
+
+.steps input, .steps textarea {
+    border: 1px solid var(--rtf-border-color);
+    border-radius: var(--rtf-br-primary);
+    padding: var(--rtf-spacing-s);
+}
+
+.steps textarea {
+    width: 80%;
+}
+
+.steps button {
+    width: 35px;
+    padding: var(--rtf-spacing-xs);
+}

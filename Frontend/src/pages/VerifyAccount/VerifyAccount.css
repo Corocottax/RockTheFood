@@ -1,0 +1,11 @@
+.verify_account {
+    padding: var(--rtf-spacing-xxl);
+    min-height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.verify_account > h1 {
+    text-align: center;
+}

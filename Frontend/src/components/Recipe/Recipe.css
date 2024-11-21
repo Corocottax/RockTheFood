@@ -1,0 +1,111 @@
+.recipe {
+    min-width: 200px;
+    max-width: 350px;
+    width: 100%;
+    border-radius: var(--rtf-br-primary);
+    height: 450px;
+    overflow: hidden;
+    border: 1px solid var(--rtf-border-color);
+    position: relative;
+}
+
+.recipe>.img {
+    width: 100%;
+    height: 50%;
+}
+
+.recipe>.img>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.recipe>.info {
+    background-color: var(--rtf-color-000);
+    padding: var(--rtf-spacing-m);
+    display: flex;
+    flex-direction: column;
+    gap: var(--rtf-spacing-m);
+    justify-content: space-between;
+    height: 25%;
+    padding-bottom: 5px;
+}
+
+.recipe>.info>h3 {
+    font-size: 23px;
+}
+
+.recipe>.info>div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recipe>.allergens {
+    height: 25%;
+    background-color: var(--rtf-color-100);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: end;
+}
+
+.recipe>.allergens>div {
+    display: flex;
+    gap: var(--rtf-spacing-s);
+    align-items: center;
+    border: none;
+    flex-direction: row;
+    width: auto;
+}
+
+.recipe>.allergens>div>img {
+    width: 20px;
+}
+
+@media (max-width: 450px) {
+    .recipe {
+        height: 500px;
+    }
+
+    .recipe>.info>h3 {
+        font-size: 20px;
+    }
+}
+
+.like {
+    width: 54px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.like>p {
+    position: absolute;
+    user-select: none;
+}
+
+.like:hover {
+    scale: 1.1;
+}
+
+.like>img {
+    width: 100%;
+}
+
+.recipe button {
+    border-radius: 0px 0px var(--rtf-br-primary) var(--rtf-br-primary);
+}
+
+.recipe button a {
+    color: white;
+}

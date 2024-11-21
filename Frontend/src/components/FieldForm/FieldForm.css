@@ -1,0 +1,20 @@
+/*Add the styles for your component here.*/
+.fieldform {
+    display: flex;
+    flex-direction: column;
+    gap: var(--rtf-spacing-m);
+    margin-top: var(--rtf-spacing-l);
+    width: 100%;
+}
+
+.fieldform > input {
+    border-radius: var(--rtf-br-primary);
+    border: 1px solid var(--rtf-border-color);
+    font-size: 16px;
+    padding: var(--rtf-spacing-s);
+}
+
+.fieldform > label {
+    font-weight: 600;
+    font-size: 16px;
+}

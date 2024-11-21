@@ -1,0 +1,40 @@
+.form {
+    background-color: var(--rtf-color-000);
+    border-radius: var(--rtf-br-primary);
+    width: 40%;
+    min-width: 300px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--rtf-spacing-l) var(--rtf-spacing-xxl);
+    border: 1px solid var(--rtf-border-color);
+    gap: var(--rtf-spacing-s);
+    position: relative;
+}
+
+.form > h2 {
+    color: var(--rtf-color-300);
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.form > p {
+    color: var(--rtf-color-500);
+    opacity: 0.8;
+}
+
+.form button {
+    margin: var(--rtf-spacing-m) 0px 0px 0px;
+    width: 100%;
+}
+
+.form a {
+    color: var(--rtf-color-200);
+    font-weight: 600;
+}
+
+.form a:hover {
+    text-decoration: underline;
+}

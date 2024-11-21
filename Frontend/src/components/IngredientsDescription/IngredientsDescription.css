@@ -1,0 +1,26 @@
+.ingredients_description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--rtf-spacing-s);
+}
+
+.ingredients_description > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--rtf-border-color);
+    width: 100%;
+    padding: var(--rtf-spacing-s);
+}
+
+.ingredients_description > div:last-child {
+    border: none;
+}
+
+.ingredients_description > div > div {
+    display: flex;
+    align-items: center;
+    gap: var(--rtf-spacing-s);
+}

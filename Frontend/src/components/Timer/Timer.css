@@ -1,0 +1,12 @@
+.timer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: var(--rtf-spacing-m) 0px;
+}
+
+.timer > div {
+    display: flex;
+    align-items: center;
+    gap: var(--rtf-spacing-s);
+}
